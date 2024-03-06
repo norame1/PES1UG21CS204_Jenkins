@@ -24,7 +24,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 // Add deployment steps here if needed
-                echo 'Deploy'
+                echo 'Deploy
             }
         }
     }
@@ -35,7 +35,7 @@ pipeline {
             script {
                 if (currentBuild.result == 'FAILURE') {
                     echo 'Pipeline failed'
-                
+                }
             }
         }
     }
